@@ -1,10 +1,12 @@
+provider foo {}
+provider bar {}
 terraform {
   required_providers {
-    alpha = {
-      source = "registry.terraform.io/-/alpha"
+    bar = {
+      source = "hashicorp/bar"
     }
-    beta = {
-      source = "registry.terraform.io/-/beta"
+    foo = {
+      source = "hashicorp/foo"
     }
   }
 }
